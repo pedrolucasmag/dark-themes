@@ -7,6 +7,10 @@ body {
 	background-color: rgb(27, 27, 27);
 }
 
+#main a {
+	color: #a68ed2;
+}
+
 header {
   min-height: 4em;
   position: fixed;
@@ -53,6 +57,18 @@ header {
 	color: #a68ed2;
 }
 
+footer ul {
+	color: rgb(158, 158, 158);
+	position:absolute;
+	bottom:0;
+	right:3%
+}
+
+footer a {
+	color: #a68ed2;
+	text-decoration:  none;
+}
+
 header h1 {
   color: rgb(186, 186, 186);
   font-size: 25px;
@@ -63,6 +79,13 @@ header h1 {
 img {
 	max-width: 100%;
     max-height: 100%;
+}
+
+._video {
+	width: 80%; 
+	position: relative; 
+	padding-bottom: 50%;
+	right:16em;
 }
 
 p {
@@ -81,6 +104,10 @@ p {
 }
 .navbar a:hover {
 	color: #a68ed2;
+}
+.chrome {
+	position: fixed;
+	top: 6em;
 }
 .firefox {
 	position: fixed;
@@ -105,10 +132,24 @@ p {
 	text-align:center;
 }
 
+._video {
+	width: 80%; 
+	position: relative; 
+	padding-bottom: 50%;
+	right:25em;
+}
+
 @media (min-width: 1920px) {
 	
 .box {
-    width: 60%;
+    width: 75%;
+}
+
+._video {
+	width: 80%; 
+	position: relative; 
+	padding-bottom: 50%;
+	right:25em;
 }
 
 .navbar {
@@ -116,7 +157,10 @@ p {
 	left: 108em;
 	height: 40%;
 }
-
+.chrome {
+	position: fixed;
+	top: 9em;
+}
 .firefox {
 	position: fixed;
 	top: 11em;
@@ -133,7 +177,13 @@ p {
 }
 
 
-@media (min-width: 1281px) {
+@media (min-width: 1281px) and (max-width: 1366px) {
+._video {
+	width: 80%; 
+	position: relative; 
+	padding-bottom: 50%;
+	right:16em;
+}
 
 }
 
@@ -143,8 +193,17 @@ p {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .box { 
-	top:20%;
+
+._video {
+	width: 80%; 
+	position: relative; 
+	padding-bottom: 50%;
+	right:17em;
+}
+	
+.box { 
+	top:9em;
+	width: 75%;
 }
 
 .navbar {
@@ -152,7 +211,10 @@ p {
 	left: 72em;
 	height: 40%;
 }
-
+.chrome {
+	position: fixed;
+	top: 9em;
+}
 .firefox {
 	position: fixed;
 	top: 11em;
@@ -174,7 +236,20 @@ p {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+	._video {
+	width: 80%; 
+	position: relative; 
+	padding-bottom: 50%;
+	right:12em;
+}
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+	left: 56em;
+	height: 20%;
+}
+
+
 }
 
 /* 
@@ -193,7 +268,6 @@ p {
 @media (min-width: 481px) and (max-width: 767px) {
 }
 	
-}
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
